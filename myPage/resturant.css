@@ -28,9 +28,15 @@ html,body{
 /* total nav  */
 .mera-nav{
     padding: 0;
+    z-index: 10;  
+}
+/* opened toggle menu's 1st list item  */
+#home{
+  margin-top: 15%;
 }
 /* side buttons  */
 .spinner{
+  z-index:20;  
     border-bottom: 3.5px solid #951c49;
     width: 26px;
     height: 9px;
@@ -110,6 +116,7 @@ nav ul li a{
 }
 /* checkbox for toggle */
 #opensidebarmenu{
+  z-index:20;  
     cursor: pointer;
     position: absolute;
     right: 7%;
@@ -118,6 +125,7 @@ nav ul li a{
   }
   /* toggle button  */
   .sidebarmenutoggle{
+  z-index:20;  
     cursor: pointer;
     position: absolute;
     right: 3%;
@@ -128,10 +136,10 @@ nav ul li a{
    .sidetoggleopenmenu{
       position: fixed;
       right: 0;
-      top: 10%;
+      top: 10.25%;
       background-color:#1c9568;
       padding-top: 3%;
-      width: 33%;
+      width: 38%;
       height: 100%;
       display: none;
       z-index: 5;
@@ -142,8 +150,9 @@ nav ul li a{
     #opensidebarmenu:checked ~ .sidetoggleopenmenu{
         transform: translateX(0px); 
       }
-  /* the white substitute boc of toggle button  */
+  /* the white substitute box of toggle button  */
   .togglesubstitute{
+  z-index:20;  
       background-color: aliceblue;
       height: 25px;
       width: 25px;
@@ -501,6 +510,7 @@ h5{
     display: block;
     padding-top: 3%;
     width: 40%;
+    top: 10.75%;
 } 
   /* list items text of the side open toggle menu   */
   .menu a:hover{
@@ -508,6 +518,8 @@ h5{
 } 
   }
   
+
+
 
 /* styling media queries for the menu tiles  in  medium screen  */
 @media (min-width:770px) and  (max-width:993px){
@@ -671,59 +683,65 @@ height: 350px;
 
 
 /* one menu category styling  */
+/* main div of all the category tiles of food in breakfast.html and specials.html  */
 .categoryContent{
   margin-top: 10%;
 }
+/* main bootstrap divs 2 in each row  */
 .menuCategoryTile{
    padding: 1%;
    margin-bottom: 4%;
    padding-right: 6%;
 }
+/* div inside the (main bootstrap divs 2 in each row) for the image of the item   */
 .menuCategoryTileimgdiv{
   background-color: aliceblue;
   height: 215px;
+  height: 215px;
+  padding: 0;
 }
+/* div inside the (main bootstrap divs 2 in each row) for the text of the item  */
 .menuCategoryTiletxt{
   height: 215px;
   text-align: center;
   padding: 2%;
 }
-.menuCategoryTileimgdiv{
-  height: 215px;
-  padding: 0;
-}
+/* div inside the (main bootstrap divs 2 in each row) for the text and image of the item  */
 .menuCategoryTileContent{
   background-color: #1c9568;
 }
-
+/* image of the food item  */
 .menuCategoryTileimg{
   height: 215px;
    width: 100%;
   background-repeat: no-repeat;
-  
   background-size: contain;
   background-size: cover; 
 }
+/* name of the food item  */
 .menuCategoryTiletxt h3{
   text-align: center;
   font-size: 1.8rem;
   font-family: 'Great Vibes', cursive;
-
 }
+/* price of the food item  */
 .price{
   text-align: right;
 }
+/* price of the food item when hovered */
 .price:hover{
   color: gold;
 }
 @media(min-width:800px) and (max-width:1200px)
 {
+/* div inside the (main bootstrap divs 2 in each row) for the text of the item  */
   .menuCategoryTiletxt{
     height: 215px;
     text-align: center;
     padding: 1%;
     font-size: 0.83rem;
   }
+/* name of the food item  */
   .menuCategoryTiletxt h3{
     text-align: center;
     font-size: 1.5rem;
@@ -731,14 +749,17 @@ height: 350px;
   
   }
 }
+
 @media(min-width:576px) and (max-width:799px)
 {
+/* div inside the (main bootstrap divs 2 in each row) for the text of the item  */
   .menuCategoryTiletxt{
     height: 215px;
     text-align: center;
     padding: 1%;
     font-size: 0.68rem;
   }
+/* name of the food item  */
   .menuCategoryTiletxt h3{
     text-align: center;
     font-size: 1.4rem;
@@ -748,11 +769,13 @@ height: 350px;
 }
 @media(max-width:576px)
 {
+/* main bootstrap divs 2 in each row  */
   .menuCategoryTile{
      padding: 9%;
      margin-bottom: 4%;
      padding-right: 8%;
   }
+/* div inside the (main bootstrap divs 2 in each row) for the text of the item  */
   .menuCategoryTiletxt{
     height: 215px;
     text-align: center;
@@ -760,14 +783,15 @@ height: 350px;
     font-size: 0.9rem;
     padding-top: 9%;
   }
+/* div inside the (main bootstrap divs 2 in each row) for the image of the item   */
   .menuCategoryTileimgdiv{
     height: 215px;
     padding: 3%;
   }
+/* name of the food item  */
    .menuCategoryTiletxt h3{
     text-align: center;
     font-size: 2rem;
     font-family: 'Great Vibes', cursive;
-  
   }  
   }
