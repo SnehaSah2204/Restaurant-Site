@@ -29,7 +29,7 @@
     <div class="container-fluid contentsofnav">
         <img  src="Images/logoo.jpg" alt="logo" class="logoimg">
         <div class="rest-details">
-        <a class="navbar-brand" href="#"><h1>Bienvenue à la Maison</h1>
+        <a class="navbar-brand" href="index.html"><h1>Bienvenue à la Maison</h1>
             <p>
                 <img src="Images/cer..png"  id="koimg" >
                 <span>Koshier Certified </span>
@@ -62,8 +62,8 @@
         <li id="home"><a href="index.html">Home</a></li>
         <li><a href="menupage.html">Menu</a></li>
         <li><a href="special.html">Specials</a></li>
-        <li><a href="#about">About us</a></li>
-        <li><a href="#awards">Awards</a></li>
+        <li><a href="#about" onclick="myFunction()">About us</a></li>
+        <li><a href="#awards" onclick="myFunction()">Awards</a></li>
         <li><a href="tel: 114-621-3010">Contact us</a></li>
     </ul>
 </div> 
@@ -164,22 +164,56 @@
     Fri-Sun: 10:00 am- 12:00 a.m<br>
   <hr class="visible-xs"></section>
  
-  <section id="address" class="col-sm-4"><span>Address : </span><br>
+  <section id="address"  class="col-sm-4"><span >Address : </span><br>
     3 Rue Jean-Jacques Rousseau<br>
     88190 Golbey <br>
     France<br>
 
   <hr class="visible-xs">
 </section>
-<section id="test" class="col-sm-4"><span>Testimonials </span><br>
-  <p>"Great food and service. Long time neighborhood restaurant and St Louis tradition."<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Sherry S</p>
+<div id="carouselExampleSlidesOnly2" class="carousel slide" data-bs-ride="carousel">
+  <span  id="test-span">Testimonials:</span>
+  
+  <div class="carousel-inner">
+    
+    <div class="carousel-item active">
+      <pre>
+"Great food and service.
+ Long time neighborhood 
+ restaurant and St Louis tradition."
+                                
+                                -Sherry S
+          </pre>
+    </div>
+    <div class="carousel-item">
+      <pre style="text-align: justify;" >
+Incredible toasted ravioli, perfectly
+poured martini, tenderloin oscar,
+dinner salad with a delicious house 
+dressing, baked potato, loaded.
+Oh and what a great wait staff!"
+                                -Norbert A
+        
+          </pre>
+    </div>
+  </div>
+  
+</div>
+<section id="test" class="col-sm-4"><br>
+  
  
-  <p>"Incredible toasted ravioli, perfectly poured martini, tenderloin oscar, dinner salad with a delicious house dressing, baked potato, loaded. Oh and what a great wait staff!"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Norbert A</p>
 <hr class="visible-xs"></section>
   </div>
-  <div class="text-center">&copy; Copyright BIENVENUE À LA MAISON</div>
+  <div class="text-center">&copy;&nbsp; <script>document.write(new Date().getFullYear())</script>&nbsp;&nbsp;Copyright BIENVENUE À LA MAISON</div>
 
 </footer>
+<script>
 
+
+function myFunction() {
+ document.getElementById("opensidebarmenu").checked=false;
+}
+ </script>
 </body>
+
 </html>
