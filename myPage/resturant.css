@@ -140,7 +140,7 @@ nav ul li a{
   }
   /* the toggle menu when opened  */
    .sidetoggleopenmenu{
-      position: absolute;
+      position: fixed;
       right: 0;
       top: 0;
       background-color:#1c9568;
@@ -571,7 +571,7 @@ pre{
 }
 /* opened toggle menu's 1st list item  */
 #home{
-  margin-top: 75%;
+  margin-top: 95%;
 }
   }
   
