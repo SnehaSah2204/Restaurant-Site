@@ -149,7 +149,7 @@ nav ul li a{
       height: 100%;
       display: none;
       z-index: 5;
-      transform: translateX(500px);      
+      transform: translateX(315px);      
     transition: transform 255ms ease-in-out;
   }  
     /* styling for hiding the side opened toggle menu on checkbox  */
